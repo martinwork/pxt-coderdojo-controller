@@ -1,7 +1,7 @@
 /**
  * Blocks for using the CoderDojo Game Controller
  */
-//% weight=100 color=#00A654 icon="\uf11b" block="Dojo Controller"
+//% weight=100 color=#000000 icon="\uf11b" block="Dojo Controller"
 //% groups='["Inputs", "Feedback"]'
 namespace CoderDojo_Controller {
 	/**
@@ -55,15 +55,16 @@ namespace CoderDojo_Controller {
      */
     //% shim=CoderDojo_Controller::init
     function init(): void {
-        pins.setPull(DigitalPin.P15, PinPullMode.PullUp);	    
-        pins.setPull(DigitalPin.P16, PinPullMode.PullUp);	    
-        pins.setPull(DigitalPin.P13, PinPullMode.PullUp);	    
-        pins.setPull(DigitalPin.P14, PinPullMode.PullUp);	    
-        pins.setPull(DigitalPin.P5, PinPullMode.PullUp);	    
-        pins.setPull(DigitalPin.P11, PinPullMode.PullUp);	    
-        pins.setPull(DigitalPin.P8, PinPullMode.PullUp);	    
-        pins.setPull(DigitalPin.P2, PinPullMode.PullUp);	    
-        pins.setPull(DigitalPin.P1, PinPullMode.PullDown);	    
+        //pins.setPull(DigitalPin.P15, PinPullMode.PullUp);	    
+        //pins.setPull(DigitalPin.P16, PinPullMode.PullUp);	    
+        //pins.setPull(DigitalPin.P13, PinPullMode.PullUp);	    
+        //pins.setPull(DigitalPin.P14, PinPullMode.PullUp);	    
+        //pins.setPull(DigitalPin.P5, PinPullMode.PullUp);	    
+        //pins.setPull(DigitalPin.P11, PinPullMode.PullUp);	    
+        //pins.setPull(DigitalPin.P8, PinPullMode.PullUp);	    
+        //pins.setPull(DigitalPin.P2, PinPullMode.PullUp);	    
+        //pins.setPull(DigitalPin.P1, PinPullMode.PullDown);	    
+        //pins.digitalWritePin(DigitalPin.P1, 0)
         return;
     }
 

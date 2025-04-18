@@ -12,15 +12,18 @@ namespace CoderDojo_Controller {
     //%
     void init() {
         if (initialized) return;
-        //This function sets all the buttons on the CoderDojo Controller to actually appear as buttons on the micro:bit
-        #define ALLOC_PIN_BUTTON(id) new MicroBitButton(getPin(id)->name, id, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
-            ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P15)
-            ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P16)
-            ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P13)
-            ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P14)
-            ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P5)
-            ALLOC_PIN_BUTTON(MICROBIT_ID_IO_P11)
-        #undef ALLOC_PIN_BUTTON
+
+        // set all the buttons on the CoderDojo Controller to actually appear as buttons on the micro:bit
+        new MicroBitButton(getPin(MICROBIT_ID_IO_P15)->name, MICROBIT_ID_IO_P15, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
+        new MicroBitButton(getPin(MICROBIT_ID_IO_P16)->name, MICROBIT_ID_IO_P16, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
+        new MicroBitButton(getPin(MICROBIT_ID_IO_P13)->name, MICROBIT_ID_IO_P13, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
+        new MicroBitButton(getPin(MICROBIT_ID_IO_P14)->name, MICROBIT_ID_IO_P14, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
+        new MicroBitButton(getPin(MICROBIT_ID_IO_P2)->name, MICROBIT_ID_IO_P2, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
+        new MicroBitButton(getPin(MICROBIT_ID_IO_P8)->name, MICROBIT_ID_IO_P8, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
+        new MicroBitButton(getPin(MICROBIT_ID_IO_P5)->name, MICROBIT_ID_IO_P5, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
+        new MicroBitButton(getPin(MICROBIT_ID_IO_P11)->name, MICROBIT_ID_IO_P11, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
+
+        new MicroBitButton(getPin(MICROBIT_ID_IO_P1)->name, MICROBIT_ID_IO_P1, MICROBIT_BUTTON_ALL_EVENTS, PullDown);
 
         initialized = true;
     }
