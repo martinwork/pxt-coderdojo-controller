@@ -3,9 +3,9 @@
  */
 //% weight=100 color=#00A654 icon="\uf11b" block="Dojo Controller"
 //% groups='["Inputs", "Feedback"]'
-namespace CoderDojo_Game_Controller {
+namespace CoderDojo_Controller {
 	/**
-	*Dojo Controller Buttons
+	*CoderDojo Controller Buttons
 	*/
 	export enum ControllerButtons {
 	    Up,
@@ -19,7 +19,7 @@ namespace CoderDojo_Game_Controller {
 	}
 
     /**
-    *Dojo Controller Button Pins
+    *CoderDojo Controller Button Pins
     */
     export enum ControllerButtonPins {
         //% block="Arrow Up (P15)"
@@ -41,7 +41,7 @@ namespace CoderDojo_Game_Controller {
     }
 
     /**
-    *Dojo Controller Button Events
+    *CoderDojo Controller Button Events
     */
     export enum ControllerButtonEvents {
         //% block="pressed"
@@ -53,7 +53,7 @@ namespace CoderDojo_Game_Controller {
     /**
      *
      */
-    //% shim=CoderDojo_Game_Controller::init
+    //% shim=CoderDojo_Controller::init
     function init(): void {
         pins.setPull(DigitalPin.P15, PinPullMode.PullUp);	    
         pins.setPull(DigitalPin.P16, PinPullMode.PullUp);	    
@@ -72,14 +72,14 @@ namespace CoderDojo_Game_Controller {
      * @param run_time is the length of time the motor will run in ms, eg: 100
      */
     //% group=Feedback
-    //% blockId="coderdojo_controller_set_led" block="Turn red LED %on_off" icon="\uf080"
+    //% blockId="coderdojo_controller_set_led" block="Turn red LED %state" icon="\uf080"
     //% weight=92 blockGap=8
-    export function setLed(on_off: number): void {
-        pins.digitalWritePin(DigitalPin.P1, on_off)
+    export function setLed(state: number): void {
+        pins.digitalWritePin(DigitalPin.P1, state)
     }
 
     /**
-     * Determines if a Dojo Controller button is pressed
+     * Determines if a CoderDojo Controller button is pressed
      * @param button press to be checked
      */
     //% group=Inputs
@@ -92,7 +92,7 @@ namespace CoderDojo_Game_Controller {
     }
 
     /**
-     * Do something when one of the Dojo Controller Buttons is pressed
+     * Do something when one of the CoderDojo Controller Buttons is pressed
      * @param button press to be checked
      * @param event happening on the button, eg: click
      */

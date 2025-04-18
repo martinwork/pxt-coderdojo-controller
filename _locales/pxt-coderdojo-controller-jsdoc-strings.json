@@ -1,0 +1,13 @@
+{
+  "CoderDojo_Game_Controller": "Blocks for driving the CoderDojo Controller\r\n\nBlocks for driving the CoderDojo Controller",
+  "CoderDojo_Game_Controller.ControllerButtonEvents": "CoderDojo Controller Button Events",
+  "CoderDojo_Game_Controller.ControllerButtonPins": "CoderDojo Controller Button Pins",
+  "CoderDojo_Game_Controller.ControllerButtons": "CoderDojo Controller Standard Buttons",
+  "CoderDojo_Game_Controller.buttonIsPressed": "Determines if a CoderDojo Controller button is pressed",
+  "CoderDojo_Game_Controller.buttonIsPressed|param|button": "press to be checked",
+  "CoderDojo_Game_Controller.onButtonPress": "Do something when one of the CoderDojo Controller Buttons is pressed",
+  "CoderDojo_Game_Controller.onButtonPress|param|button": "press to be checked",
+  "CoderDojo_Game_Controller.onButtonPress|param|event": "happening on the button, eg: click",
+  "CoderDojo_Game_Controller.setLed": "Turn the Red LED On or Off",
+  "CoderDojo_Game_Controller.setLed|param|state": "LED Off or On"
+}
