@@ -12,7 +12,7 @@
         "shims.d.ts",
         "enums.d.ts",
         "controller.cpp",
-        "_locales/nl/pxt-coderdojo-game-controller-jsdoc-strings.json",
+        "_locales/nl/pxt-coderdojo-controller-jsdoc-strings.json",
         "_locales/nl/pxt-coderdojo-controller-strings.json"
     ],
     "testFiles": [
