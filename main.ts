@@ -22,21 +22,21 @@ namespace CoderDojo_Controller {
     *CoderDojo Controller Button Pins
     */
     export enum ControllerButtonPins {
-        //% block="Arrow Up (P15)"
+        //% block="Up"
         Up = DAL.MICROBIT_ID_IO_P15,
-        //% block="Arrow Down (P16)"
+        //% block="Down"
         Down = DAL.MICROBIT_ID_IO_P16,
-        //% block="Arrow Left (P13)"
+        //% block="Left"
         Left = DAL.MICROBIT_ID_IO_P13,
-        //% block="Arrow Right (P14)"
+        //% block="Right"
         Right = DAL.MICROBIT_ID_IO_P14,
-        //% block="Action A (P5)"
+        //% block="A"
         A = DAL.MICROBIT_ID_IO_P5,
-        //% block="Action B (P11)"
+        //% block="B"
         B = DAL.MICROBIT_ID_IO_P11,
-        //% block="Action X (P8)"
+        //% block="X"
         X = DAL.MICROBIT_ID_IO_P8,
-        //% block="Action Y (P2)"
+        //% block="Y"
         Y = DAL.MICROBIT_ID_IO_P2
     }
 
