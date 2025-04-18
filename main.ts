@@ -1,11 +1,11 @@
 /**
- * Blocks for driving the Kitronik :GAME Controller
+ * Blocks for using the CoderDojo Game Controller
  */
-//% weight=100 color=#00A654 icon="\uf11b" block=":GAME Controller"
+//% weight=100 color=#00A654 icon="\uf11b" block="Dojo Controller"
 //% groups='["Inputs", "Feedback"]'
-namespace Kitronik_Game_Controller {
+namespace CoderDojo_Game_Controller {
 	/**
-	*:GAME Controller Standard Buttons
+	*Dojo Controller Buttons
 	*/
 	export enum ControllerButtons {
 	    Up,
@@ -17,7 +17,7 @@ namespace Kitronik_Game_Controller {
 	}
 
     /**
-    *:GAME Controller Button Pins
+    *Dojo Controller Button Pins
     */
     export enum ControllerButtonPins {
         //% block="Joypad Up (P8)"
@@ -35,7 +35,7 @@ namespace Kitronik_Game_Controller {
     }
 
     /**
-    *:GAME Controller Button Events
+    *Dojo Controller Button Events
     */
     export enum ControllerButtonEvents {
         //% block="down"
@@ -49,17 +49,17 @@ namespace Kitronik_Game_Controller {
     /**
      *
      */
-    //% shim=Kitronik_Game_Controller::init
+    //% shim=CoderDojo_Game_Controller::init
     function init(): void {
         return;
     }
 
     /**
-     * Run vibration motor for a particular length of time
+     * Set red LED
      * @param run_time is the length of time the motor will run in ms, eg: 100
      */
     //% group=Feedback
-    //% blockId="kitronik_controller_run_motor" block="Run motor for %run_time|ms" icon="\uf080"
+    //% blockId="coderdojo_controller_set_led" block="Run motor for %run_time|ms" icon="\uf080"
     //% weight=92 blockGap=8
     export function runMotor(run_time: number): void {
         pins.digitalWritePin(DigitalPin.P1, 1)
@@ -68,21 +68,21 @@ namespace Kitronik_Game_Controller {
     }
 
     /**
-     * Setup micro:bit to play music through :GAME Controller buzzer
+     * Setup micro:bit to play music through Dojo Controller buzzer
      */
     //% group=Feedback
-    //% blockId="kitronik_controller_buzzer_setup" block="set pitch pin to buzzer" icon="\uf080"
+    //% blockId="coderdojo_controller_buzzer_setup" block="set pitch pin to buzzer" icon="\uf080"
     //% weight=91 blockGap=8
     export function setBuzzerPin(): void {
         pins.analogSetPitchPin(AnalogPin.P2)
     }
 
     /**
-     * Determines if a :GAME Controller button is pressed
+     * Determines if a Dojo Controller button is pressed
      * @param button press to be checked
      */
     //% group=Inputs
-    //% blockId="kitronik_controller_ispressed" block="button %button|is pressed"
+    //% blockId="coderdojo_controller_ispressed" block="button %button|is pressed"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% weight=95 blockGap=8
     export function buttonIsPressed(button: ControllerButtonPins): boolean {
@@ -92,12 +92,12 @@ namespace Kitronik_Game_Controller {
     }
 
     /**
-     * Do something when one of the :GAME Controller Buttons is pressed
+     * Do something when one of the Dojo Controller Buttons is pressed
      * @param button press to be checked
      * @param event happening on the button, eg: click
      */
     //% group=Inputs
-    //% blockId="kitronik_controller_button_press_on_event" block="on button %button|press %event"
+    //% blockId="coderdojo_controller_button_press_on_event" block="on button %button|press %event"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% weight=93 blockGap=8
     export function onButtonPress(button: ControllerButtonPins, event: ControllerButtonEvents, handler: Action) {
