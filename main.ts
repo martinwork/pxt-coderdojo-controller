@@ -102,7 +102,7 @@ namespace CoderDojo_Controller {
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% weight=93 blockGap=8
     export function onButtonPress(button: ControllerButtonPins, event: ControllerButtonEvents, handler: Action) {
-        init();
+        //init();
         control.onEvent(<number>button, <number>event, handler);
     }
 
