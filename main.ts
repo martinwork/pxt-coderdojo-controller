@@ -12,38 +12,42 @@ namespace CoderDojo_Game_Controller {
 	    Down,
 	    Left,
 	    Right,
-	    Fire1,
-	    Fire2
+	    A,
+	    B,
+	    X,
+	    Y
 	}
 
     /**
     *Dojo Controller Button Pins
     */
     export enum ControllerButtonPins {
-        //% block="Joypad Up (P8)"
-        Up = DAL.MICROBIT_ID_IO_P8,
-        //% block="Joypad Down (P14)"
-        Down = DAL.MICROBIT_ID_IO_P14,
-        //% block="Joypad Left (P12)"
-        Left = DAL.MICROBIT_ID_IO_P12,
-        //% block="Joypad Right (P13)"
-        Right = DAL.MICROBIT_ID_IO_P13,
-        //% block="Fire 1 (P15)"
-        Fire1 = DAL.MICROBIT_ID_IO_P15,
-        //% block="Fire 2 (P16)"
-        Fire2 = DAL.MICROBIT_ID_IO_P16
+        //% block="Arrow Up (P15)"
+        Up = DAL.MICROBIT_ID_IO_P15,
+        //% block="Arrow Down (P16)"
+        Down = DAL.MICROBIT_ID_IO_P16,
+        //% block="Arrow Left (P13)"
+        Left = DAL.MICROBIT_ID_IO_P13,
+        //% block="Arrow Right (P14)"
+        Right = DAL.MICROBIT_ID_IO_P14,
+        //% block="Action A (P5)"
+        A = DAL.MICROBIT_ID_IO_P5,
+        //% block="Action B (P11)"
+        B = DAL.MICROBIT_ID_IO_P11,
+        //% block="Action X (P8)"
+        X = DAL.MICROBIT_ID_IO_P8,
+        //% block="Action Y (P2)"
+        Y = DAL.MICROBIT_ID_IO_P2
     }
 
     /**
     *Dojo Controller Button Events
     */
     export enum ControllerButtonEvents {
-        //% block="down"
-        Down = DAL.MICROBIT_BUTTON_EVT_DOWN,
-        //% block="up"
-        Up = DAL.MICROBIT_BUTTON_EVT_UP,
-        //% block="click"
-        Click = DAL.MICROBIT_BUTTON_EVT_CLICK
+        //% block="pressed"
+        Pressed = DAL.MICROBIT_BUTTON_EVT_DOWN,
+        //% block="released"
+        Released = DAL.MICROBIT_BUTTON_EVT_UP
     }
 
     /**
@@ -51,6 +55,15 @@ namespace CoderDojo_Game_Controller {
      */
     //% shim=CoderDojo_Game_Controller::init
     function init(): void {
+        pins.setPull(DigitalPin.P15, PinPullMode.PullUp);	    
+        pins.setPull(DigitalPin.P16, PinPullMode.PullUp);	    
+        pins.setPull(DigitalPin.P13, PinPullMode.PullUp);	    
+        pins.setPull(DigitalPin.P14, PinPullMode.PullUp);	    
+        pins.setPull(DigitalPin.P5, PinPullMode.PullUp);	    
+        pins.setPull(DigitalPin.P11, PinPullMode.PullUp);	    
+        pins.setPull(DigitalPin.P8, PinPullMode.PullUp);	    
+        pins.setPull(DigitalPin.P2, PinPullMode.PullUp);	    
+        pins.setPull(DigitalPin.P1, PinPullMode.PullDown);	    
         return;
     }
 
@@ -59,22 +72,10 @@ namespace CoderDojo_Game_Controller {
      * @param run_time is the length of time the motor will run in ms, eg: 100
      */
     //% group=Feedback
-    //% blockId="coderdojo_controller_set_led" block="Run motor for %run_time|ms" icon="\uf080"
+    //% blockId="coderdojo_controller_set_led" block="Turn red LED %on_off" icon="\uf080"
     //% weight=92 blockGap=8
-    export function runMotor(run_time: number): void {
-        pins.digitalWritePin(DigitalPin.P1, 1)
-        basic.pause(run_time)
-        pins.digitalWritePin(DigitalPin.P1, 0)
-    }
-
-    /**
-     * Setup micro:bit to play music through Dojo Controller buzzer
-     */
-    //% group=Feedback
-    //% blockId="coderdojo_controller_buzzer_setup" block="set pitch pin to buzzer" icon="\uf080"
-    //% weight=91 blockGap=8
-    export function setBuzzerPin(): void {
-        pins.analogSetPitchPin(AnalogPin.P2)
+    export function setLed(on_off: number): void {
+        pins.digitalWritePin(DigitalPin.P1, on_off)
     }
 
     /**
@@ -87,7 +88,6 @@ namespace CoderDojo_Game_Controller {
     //% weight=95 blockGap=8
     export function buttonIsPressed(button: ControllerButtonPins): boolean {
         const pin = <DigitalPin><number>button;
-        pins.setPull(pin, PinPullMode.PullUp);
         return pins.digitalReadPin(pin) == 0;
     }
 
