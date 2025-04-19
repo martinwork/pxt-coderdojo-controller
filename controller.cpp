@@ -19,7 +19,7 @@ namespace CoderDojo_Controller {
         new MicroBitButton(getPin(MICROBIT_ID_IO_P13)->name, MICROBIT_ID_IO_P13, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
         new MicroBitButton(getPin(MICROBIT_ID_IO_P14)->name, MICROBIT_ID_IO_P14, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
         new MicroBitButton(getPin(MICROBIT_ID_IO_P2)->name, MICROBIT_ID_IO_P2, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
-        new MicroBitButton(getPin(MICROBIT_ID_IO_P8)->name, MICROBIT_ID_IO_P8, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
+        //new MicroBitButton(getPin(MICROBIT_ID_IO_P8)->name, MICROBIT_ID_IO_P8, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
         //new MicroBitButton(getPin(MICROBIT_ID_IO_P5)->name, MICROBIT_ID_IO_P5, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
         //new MicroBitButton(getPin(MICROBIT_ID_IO_P11)->name, MICROBIT_ID_IO_P11, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
 
