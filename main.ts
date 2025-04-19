@@ -31,9 +31,9 @@ namespace CoderDojo_Controller {
         //% block="Right"
         Right = DAL.MICROBIT_ID_IO_P14,
         //% block="A"
-        A = DAL.MICROBIT_ID_IO_P5,
+        A = DAL.MICROBIT_ID_BUTTON_A,
         //% block="B"
-        B = DAL.MICROBIT_ID_IO_P11,
+        B = DAL.MICROBIT_ID_BUTTON_B,
         //% block="X"
         X = DAL.MICROBIT_ID_IO_P8,
         //% block="Y"
@@ -55,16 +55,6 @@ namespace CoderDojo_Controller {
      */
     //% shim=CoderDojo_Controller::init
     function init(): void {
-        //pins.setPull(DigitalPin.P15, PinPullMode.PullUp);	    
-        //pins.setPull(DigitalPin.P16, PinPullMode.PullUp);	    
-        //pins.setPull(DigitalPin.P13, PinPullMode.PullUp);	    
-        //pins.setPull(DigitalPin.P14, PinPullMode.PullUp);	    
-        //pins.setPull(DigitalPin.P5, PinPullMode.PullUp);	    
-        //pins.setPull(DigitalPin.P11, PinPullMode.PullUp);	    
-        //pins.setPull(DigitalPin.P8, PinPullMode.PullUp);	    
-        //pins.setPull(DigitalPin.P2, PinPullMode.PullUp);	    
-        //pins.setPull(DigitalPin.P1, PinPullMode.PullDown);	    
-        //pins.digitalWritePin(DigitalPin.P1, 0)
         return;
     }
 
@@ -106,17 +96,17 @@ namespace CoderDojo_Controller {
         control.onEvent(<number>button, <number>event, handler);
     }
 
-    pins.setPull(DigitalPin.P2, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P11, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P5, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P15, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P16, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P1, PinPullMode.PullDown);
-    pins.digitalWritePin(DigitalPin.P1, 0);
-	init();
+    //pins.setPull(DigitalPin.P2, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P11, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P5, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P15, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P16, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P1, PinPullMode.PullDown);
+    //pins.digitalWritePin(DigitalPin.P1, 0);
+    init();
     music.play(music.tonePlayable(131, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);
     music.play(music.tonePlayable(988, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);   
 }
