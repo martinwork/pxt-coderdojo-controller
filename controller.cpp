@@ -4,7 +4,7 @@ using namespace pxt;
 /**
  * Blocks for driving the CoderDojo Controller
  */
-//% color=#00A654 weight=100
+//% color=#000000 weight=100
 namespace CoderDojo_Controller {
 
     bool initialized = false;
@@ -22,8 +22,6 @@ namespace CoderDojo_Controller {
         new MicroBitButton(getPin(MICROBIT_ID_IO_P8)->name, MICROBIT_ID_IO_P8, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
         new MicroBitButton(getPin(MICROBIT_ID_IO_P5)->name, MICROBIT_ID_IO_P5, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
         new MicroBitButton(getPin(MICROBIT_ID_IO_P11)->name, MICROBIT_ID_IO_P11, MICROBIT_BUTTON_ALL_EVENTS, PullUp);
-
-        new MicroBitButton(getPin(MICROBIT_ID_IO_P1)->name, MICROBIT_ID_IO_P1, MICROBIT_BUTTON_ALL_EVENTS, PullDown);
 
         initialized = true;
     }
