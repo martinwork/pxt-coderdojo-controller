@@ -109,6 +109,6 @@ namespace CoderDojo_Controller {
 	
     init();
     music.play(music.tonePlayable(131, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);
-    music.play(music.tonePlayable(988, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);   
+    music.play(music.tonePlayable(980, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);   
 }
 
