@@ -1,0 +1,18 @@
+Part(s)	Reference	Description	Supplier	Supplier ref	Quantity	Estimated price	Subtotal
+R1, R2, R3, R4, R8, R9	Res 1K SMD0805	1K / 1% / 0,1W / 0805	LCSC	C95781	6	€ 0,01	€ 0,06
+R5	Res 100R SMD0805	100R / 1% / 0,1W / 0805	LCSC	C105577	1	€ 0,01	€ 0,01
+R6, R7	Res 470R SMD0805	470R / 1% / 0,1W / 0805	LCSC	C114564	2	€ 0,01	€ 0,02
+C1, C2 (Optional)	Cap 4u7 16v SMD1206	Capacitor ceramic 4u7 / 16V / SMD 1206	LCSC	C51205	2	€ 0,02	€ 0,04
+LD1	LED Red SMD0805	Led Red 625nm / 120 deg / 20mA / 2V / SMD 0805	LCSC	C965812	1	€ 0,02	€ 0,02
+LD2	LED Green SMD0805	Led Green 568nm / 120 deg / 20mA / 2,2V / SMD 0805	LCSC	C965815	1	€ 0,02	€ 0,02
+F1	Polyfuse 500mA SMD1812	Polyfuse 30V/500mA	Aliexpress	https://www.aliexpress.com/item/1005006431435556.html	1	€ 0,08	€ 0,08
+BUZ1	9042 16R Passive	Passive piezo sounder 3-5v	Aliexpress	https://www.aliexpress.com/item/1005006230919996.html	1	€ 0,19	€ 0,19
+SW1,2,3,4,6,7,8,9	Pushbutton 6x6x5mm	drukknop (on)-off 6x6mm print height 5mm	Aliexpress	https://www.aliexpress.com/item/1005001897291190.html	8	€ 0,05	€ 0,40
+SW5	Switch SS-12F23	50v/0,5A spdt	Aliexpress	https://www.aliexpress.com/item/1005004508647910.html	1	€ 0,08	€ 0,08
+BATT1	2XAAA Box	Battery holder 2x AAA with center hole	Aliexpress	https://www.aliexpress.com/item/1005006274732583.html	1	€ 0,36	€ 0,36
+J1	Edge connector horizontal SMD	Micro:bit edge connector	Aliexpress	https://www.aliexpress.com/item/1005006206948907.html	1	€ 0,85	€ 0,85
+Other 1	SMTSO M3 1ET	SMD M3 Nut Length 1,5 + 1mm	Aliexpress	https://www.aliexpress.com/item/1005007226371037.html	1	€ 0,22	€ 0,22
+Other 2	Screw M3x6	Screw M3x6 countersunk	Aliexpress	https://www.aliexpress.com/item/4000983507018.html	1	€ 0,04	€ 0,04
+Other 3	Cable holder	3D Printed Cable Holder PETG Black		Cable holder 3D Print.stl	1	€ 0,50	€ 0,50
+Other 4	PCB	CoderDojo Controller circuit board	JLCPCB	CoderDojo Controller JLCPCB order.zip	1	€ 1,00	€ 1,00
+Total							€ 3,89
