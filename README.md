@@ -2,7 +2,8 @@
 
 This is a DIY Game Controller for Micro:bit that costs under 4€ / 5$ if parts are ordered in volume. The USB cable can be stored at the back of the controller together with 2 AAA batteries.
 
-![Controller image](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Front%203d.jpg?raw=true)
+![Controller front image](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Front%203d.jpg?raw=true)
+![Controller back image](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Back%20cable.jpg?raw=true)
 
 ## Building and sourcing parts
 
