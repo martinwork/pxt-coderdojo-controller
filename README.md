@@ -2,6 +2,8 @@
 
 This is a DIY Game Controller for Micro:bit that costs under 4€ / 5$ if parts are ordered in volume. The USB cable can be stored at the back of the controller together with 2 AAA batteries.
 
+![Controller image](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Front%203d.jpg?raw=true)
+
 ## Building and sourcing parts
 
 The (empty) PCB can be easily manufactured by any PCB company, for example JLCPCB which is known as the cheapest. The cable holder at the back can be 3D printed with any 3D printer, for example the affordable Creality Ender V2 or V3. It is recommended to print in (black) PETG as it is stronger and more fire resistant than PLA.
