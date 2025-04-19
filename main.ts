@@ -92,7 +92,8 @@ namespace CoderDojo_Controller {
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% weight=93 blockGap=8
     export function onButtonPress(button: ControllerButtonPins, event: ControllerButtonEvents, handler: Action) {
-        //init();
+    	music.play(music.tonePlayable(131, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);
+        init();
         control.onEvent(<number>button, <number>event, handler);
     }
 
@@ -107,8 +108,6 @@ namespace CoderDojo_Controller {
     //pins.setPull(DigitalPin.P1, PinPullMode.PullDown);
     //pins.digitalWritePin(DigitalPin.P1, 0);
 	
-    init();
-    music.play(music.tonePlayable(131, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);
-    music.play(music.tonePlayable(980, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);   
+    //init();
 }
 
