@@ -92,22 +92,18 @@ namespace CoderDojo_Controller {
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% weight=93 blockGap=8
     export function onButtonPress(button: ControllerButtonPins, event: ControllerButtonEvents, handler: Action) {
-    	music.play(music.tonePlayable(131, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);
         init();
         control.onEvent(<number>button, <number>event, handler);
     }
 
-    //pins.setPull(DigitalPin.P2, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P11, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P5, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P15, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P16, PinPullMode.PullUp);
+    pins.setPull(DigitalPin.P2, PinPullMode.PullUp);
+    pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
+    pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
+    pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
+    pins.setPull(DigitalPin.P15, PinPullMode.PullUp);
+    pins.setPull(DigitalPin.P16, PinPullMode.PullUp);
     //pins.setPull(DigitalPin.P1, PinPullMode.PullDown);
-    //pins.digitalWritePin(DigitalPin.P1, 0);
-	
+    //pins.digitalWritePin(DigitalPin.P1, 0);	
     //init();
 }
 
