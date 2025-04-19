@@ -116,6 +116,7 @@ namespace CoderDojo_Controller {
     pins.setPull(DigitalPin.P16, PinPullMode.PullUp);
     pins.setPull(DigitalPin.P1, PinPullMode.PullDown);
     pins.digitalWritePin(DigitalPin.P1, 0);
+	init();
     music.play(music.tonePlayable(131, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);
     music.play(music.tonePlayable(988, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone);   
 }
