@@ -5,13 +5,13 @@
 namespace CoderDojo_Controller {
     // shim of CoderDojo_Controller::CoderDojoButton
     export enum CoderDojoButton {
-        //% block="Up"
+        //% block="🡅"
         Up = 0,
-        //% block="Down"
+        //% block="🡇"
         Down = 1,
-        //% block="Left"
+        //% block="🡄"
         Left = 2,
-        //% block="Right"
+        //% block="🡆"
         Right = 3,
         //% block="X"
         X = 4,
@@ -24,13 +24,13 @@ namespace CoderDojo_Controller {
     }
 
     export enum CoderDojoButtonID {
-        //% block="Up"
+        //% block="🡅"
         Up = DAL.MICROBIT_ID_IO_P15,
-        //% block="Down"
+        //% block="🡇"
         Down = DAL.MICROBIT_ID_IO_P16,
-        //% block="Left"
+        //% block="🡄"
         Left = DAL.MICROBIT_ID_IO_P13,
-        //% block="Right"
+        //% block="🡆"
         Right = DAL.MICROBIT_ID_IO_P14,
         //% block="X"
         X = DAL.MICROBIT_ID_IO_P8,
@@ -72,7 +72,8 @@ namespace CoderDojo_Controller {
     //% shim=CoderDojo_Controller::init
     function init(): void { return; }
 
-    //% blockId="coderdojo_controller_button_press_on_event" block="on button %button is %event"
+    //% block="on button %button %event"
+    //% blockId="coderdojo_controller_button_press_on_event"
     //% weight=95 blockGap=8
     export function onButtonPress(button: CoderDojoButtonID, event: CoderDojoButtonEvent, handler: Action) {
         control.onEvent(<number>button, <number>event, handler);
@@ -84,7 +85,8 @@ namespace CoderDojo_Controller {
     //% shim=CoderDojo_Controller::buttonIsPressed
     export function buttonIsPressed(button: CoderDojoButton, state: CoderDojoButtonState): boolean { return false; }
 
-    //% blockId="coderdojo_controller_set_led" block="turn %led LED %state" icon="\uf080"
+    //% block="turn %led LED %state" icon="\uf080"
+    //% blockId="coderdojo_controller_set_led"
     //% weight=80 blockGap=8
     export function setLed(led: CoderDojoLed, state: CoderDojoLedState): void {
         pins.digitalWritePin(DigitalPin.P1, <number>state); // only 1 LED so don't test which led
