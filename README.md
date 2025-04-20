@@ -27,7 +27,7 @@ Creating software for this controller can be done with [Microsoft MakeCode for m
 * Search for coderDojo-controller and click on the thumbnail
 
 After adding the extension, you'll find the specific blocks for this controller under \[Dojo Controller\]
-![Controller back image](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Makecode%20blocks.jpg?raw=true)
+![Makecode blocks](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Makecode%20blocks.png?raw=true)
 
 The blocks work the same as the standard micro:bit A and B buttons and can be used in 2 ways:
 * An event driven approach: use the \[on button .. pressed\] block. The code inside gets executed when a button is pressed/clicked. The behaviour can be changed to execute the code if the button is released instead.
