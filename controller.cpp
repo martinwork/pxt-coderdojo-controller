@@ -55,7 +55,7 @@ namespace CoderDojo_Controller {
      * Get the button state (pressed or not) for any of the 8 controller buttons. Buttons A and B are the same as on the Micro:bit.
      * @param button the button to query the request, eg: Button.A
      */
-    //% block="button|%button|is pressed"
+    //% block="button %button is pressed"
     //% blockId=coderdojo_controller_button_is_pressed
     //% icon="\uf192" blockGap=8
     bool buttonIsPressed(CoderDojoButton button) {

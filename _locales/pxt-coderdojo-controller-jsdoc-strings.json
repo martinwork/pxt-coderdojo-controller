@@ -1,13 +1,15 @@
 {
-  "CoderDojo_Game_Controller": "Blocks for driving the CoderDojo Controller\r\n\nBlocks for driving the CoderDojo Controller",
-  "CoderDojo_Game_Controller.ControllerButtonEvents": "CoderDojo Controller Button Events",
-  "CoderDojo_Game_Controller.ControllerButtonPins": "CoderDojo Controller Button Pins",
-  "CoderDojo_Game_Controller.ControllerButtons": "CoderDojo Controller Standard Buttons",
-  "CoderDojo_Game_Controller.buttonIsPressed": "Determines if a CoderDojo Controller button is pressed",
-  "CoderDojo_Game_Controller.buttonIsPressed|param|button": "press to be checked",
-  "CoderDojo_Game_Controller.onButtonPress": "Do something when one of the CoderDojo Controller Buttons is pressed",
-  "CoderDojo_Game_Controller.onButtonPress|param|button": "press to be checked",
-  "CoderDojo_Game_Controller.onButtonPress|param|event": "happening on the button, eg: click",
-  "CoderDojo_Game_Controller.setLed": "Turn the Red LED On or Off",
-  "CoderDojo_Game_Controller.setLed|param|state": "LED Off or On"
+  "CoderDojo_Controller": "Blocks for driving the CoderDojo Controller",
+  "CoderDojo_Controller.CoderDojoButton": "CoderDojo Controller Buttons",
+  "CoderDojo_Controller.CoderDojoButtonID": "CoderDojo Controller Buttons",
+  "CoderDojo_Controller.CoderDojoButtonEvent": "CoderDojo Controller Button Event",
+  "CoderDojo_Controller.CoderDojoLed": "CoderDojo Controller LED's",
+  "CoderDojo_Controller.CoderDojoLedState": "LED state",
+  "CoderDojo_Controller.setLed": "Turn the controller LED On or Off",
+  "CoderDojo_Controller.setLed|param|state": "LED Off or On",
+  "CoderDojo_Controller.buttonIsPressed": "Determines if a button is being pressed",
+  "CoderDojo_Controller.buttonIsPressed|param|button": "which button to check",
+  "CoderDojo_Controller.onButtonPress": "Do something when one of the buttons on the controller is pressed",
+  "CoderDojo_Controller.onButtonPress|param|button": "which button",
+  "CoderDojo_Controller.onButtonPress|param|event": "button pressed or released"
 }

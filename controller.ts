@@ -6,40 +6,40 @@
 namespace CoderDojo_Controller {
     // shim of CoderDojo_Controller::CoderDojoButton
     export enum CoderDojoButton {
-        //% block="up"
+        //% block="Up"
         Up = 0,
-        //% block="down"
+        //% block="Down"
         Down = 1,
-        //% block="left"
+        //% block="Left"
         Left = 2,
-        //% block="right"
+        //% block="Right"
         Right = 3,
-        //% block="x"
+        //% block="X"
         X = 4,
-        //% block="y"
+        //% block="Y"
         Y = 5,
-        //% block="a"
+        //% block="A"
         A = 6,
-        //% block="b"
+        //% block="B"
         B = 7
     }
 
     export enum CoderDojoButtonID {
-        //% block="up"
+        //% block="Up"
         Up = DAL.MICROBIT_ID_IO_P15,
-        //% block="down"
+        //% block="Down"
         Down = DAL.MICROBIT_ID_IO_P16,
-        //% block="left"
+        //% block="Left"
         Left = DAL.MICROBIT_ID_IO_P13,
-        //% block="right"
+        //% block="Right"
         Right = DAL.MICROBIT_ID_IO_P14,
-        //% block="x"
+        //% block="X"
         X = DAL.MICROBIT_ID_IO_P8,
-        //% block="y"
+        //% block="Y"
         Y = DAL.MICROBIT_ID_IO_P2,
-        //% block="a"
+        //% block="A"
         A = DAL.MICROBIT_ID_BUTTON_A,
-        //% block="b"
+        //% block="B"
         B = DAL.MICROBIT_ID_BUTTON_B
     }
 
@@ -73,13 +73,13 @@ namespace CoderDojo_Controller {
     }
 	
     //% group=Inputs
-    //% blockId="coderdojo_controller_button_is_pressed" block="button %button|is pressed"
+    //% blockId="coderdojo_controller_button_is_pressed" block="button %button is pressed"
     //% weight=95 blockGap=8
-    //% shim=CoderDojo_Controller::isButtonPressed
+    //% shim=CoderDojo_Controller::buttonIsPressed
     export function buttonIsPressed(button: CoderDojoButton): boolean { return false; } // MicroBitButton class can only be accessed in c++
 
     //% group=Inputs
-    //% blockId="coderdojo_controller_button_press_on_event" block="on button %button|press %event"
+    //% blockId="coderdojo_controller_button_press_on_event" block="on button %button is %event"
     //% weight=93 blockGap=8
     export function onButtonPress(button: CoderDojoButtonID, event: CoderDojoButtonEvent, handler: Action) {
         init();
