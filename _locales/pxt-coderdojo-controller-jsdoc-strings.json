@@ -8,8 +8,8 @@
   "CoderDojo_Controller.setLed": "Turn the controller LED On or Off",
   "CoderDojo_Controller.setLed|param|state": "LED Off or On",
   "CoderDojo_Controller.buttonIsPressed": "Determines if a button is being pressed",
-  "CoderDojo_Controller.buttonIsPressed|param|button": "which button to check",
+  "CoderDojo_Controller.buttonIsPressed|param|button": "Which button to check",
   "CoderDojo_Controller.onButtonPress": "Do something when one of the buttons on the controller is pressed",
-  "CoderDojo_Controller.onButtonPress|param|button": "which button",
-  "CoderDojo_Controller.onButtonPress|param|event": "button pressed or released"
+  "CoderDojo_Controller.onButtonPress|param|button": "Which button",
+  "CoderDojo_Controller.onButtonPress|param|event": "Button pressed or released"
 }

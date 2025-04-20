@@ -44,9 +44,10 @@ namespace CoderDojo_Controller {
 
     //%
     void init() {
+        // Prevent calling more than once (which also causes memory leak)
         if (initialized) return;
         
-        // Enable pull-up and enable button events. Use the MicroBitButton class (instead of edge detection) to have bounce surpression
+        // Set pull-up and enable button events. Use the MicroBitButton class (instead of edge detection) to have bounce surpression
         // Buttons A and B are already configured as uBit.buttonA and uBit.ButtonB
         buttonUp = new MicroBitButton(getPin(MICROBIT_ID_IO_P15)->name, MICROBIT_ID_IO_P15, MICROBIT_BUTTON_SIMPLE_EVENTS, PullUp);
         buttonDown = new MicroBitButton(getPin(MICROBIT_ID_IO_P16)->name, MICROBIT_ID_IO_P16, MICROBIT_BUTTON_SIMPLE_EVENTS, PullUp);

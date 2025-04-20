@@ -2,7 +2,6 @@
  * Blocks for using the CoderDojo Game Controller
  */
 //% weight=100 color=#000000 icon="\uf11b" block="Dojo Controller"
-//% groups='["Inputs", "Feedback"]'
 namespace CoderDojo_Controller {
     // shim of CoderDojo_Controller::CoderDojoButton
     export enum CoderDojoButton {
@@ -71,12 +70,11 @@ namespace CoderDojo_Controller {
     }
 	
     //% shim=CoderDojo_Controller::init
-    function init(): void { return; }
+    function init(): void {}
 
     //% blockId="coderdojo_controller_button_press_on_event" block="on button %button is %event"
     //% weight=95 blockGap=8
     export function onButtonPress(button: CoderDojoButtonID, event: CoderDojoButtonEvent, handler: Action) {
-        init();
         control.onEvent(<number>button, <number>event, handler);
     }
 
@@ -84,7 +82,7 @@ namespace CoderDojo_Controller {
     //% blockId="coderdojo_controller_button_is_pressed"
     //% weight=90 blockGap=14
     //% shim=CoderDojo_Controller::buttonIsPressed
-    export function buttonIsPressed(button: CoderDojoButton, state: CoderDojoButtonState): boolean { return false; } // MicroBitButton class can only be accessed in c++
+    export function buttonIsPressed(button: CoderDojoButton, state: CoderDojoButtonState): boolean { return false; }
 
     //% blockId="coderdojo_controller_set_led" block="turn %led LED %state" icon="\uf080"
     //% weight=80 blockGap=8
@@ -92,12 +90,13 @@ namespace CoderDojo_Controller {
         pins.digitalWritePin(DigitalPin.P1, <number>state); // only 1 LED so don't test which led
     }
 
-    //pins.setPull(DigitalPin.P2, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P15, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P16, PinPullMode.PullUp);
+    // pull directions are set when creating MicroBitButton() instances in init()
+    // pins.setPull(DigitalPin.P2, PinPullMode.PullUp);
+    // pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
+    // pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
+    // pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
+    // pins.setPull(DigitalPin.P15, PinPullMode.PullUp);
+    // pins.setPull(DigitalPin.P16, PinPullMode.PullUp);
     init();
 }
 

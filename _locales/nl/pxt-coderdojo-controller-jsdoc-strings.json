@@ -1,15 +1,15 @@
 {
-  "CoderDojo_Controller": "Blocks for driving the CoderDojo Controller",
-  "CoderDojo_Controller.CoderDojoButton": "CoderDojo Controller Buttons",
-  "CoderDojo_Controller.CoderDojoButtonID": "CoderDojo Controller Buttons",
-  "CoderDojo_Controller.CoderDojoButtonEvent": "CoderDojo Controller Button Event",
+  "CoderDojo_Controller": "Blokken om de CoderDojo Controller aan te sturen",
+  "CoderDojo_Controller.CoderDojoButton": "CoderDojo Controller Knoppen",
+  "CoderDojo_Controller.CoderDojoButtonID": "CoderDojo Controller Knoppen",
+  "CoderDojo_Controller.CoderDojoButtonEvent": "CoderDojo Controller Knoppen Gebeurtenis",
   "CoderDojo_Controller.CoderDojoLed": "CoderDojo Controller LED's",
-  "CoderDojo_Controller.CoderDojoLedState": "LED state",
-  "CoderDojo_Controller.setLed": "Turn the controller LED On or Off",
+  "CoderDojo_Controller.CoderDojoLedState": "LED status",
+  "CoderDojo_Controller.setLed": "Zet LED op de controller aan of uit",
   "CoderDojo_Controller.setLed|param|state": "LED Off or On",
-  "CoderDojo_Controller.buttonIsPressed": "Determines if a button is being pressed",
-  "CoderDojo_Controller.buttonIsPressed|param|button": "which button to check",
-  "CoderDojo_Controller.onButtonPress": "Do something when one of the buttons on the controller is pressed",
-  "CoderDojo_Controller.onButtonPress|param|button": "which button",
-  "CoderDojo_Controller.onButtonPress|param|event": "button pressed or released"
+  "CoderDojo_Controller.buttonIsPressed": "Bepaal of een knop is ingedrukt of niet",
+  "CoderDojo_Controller.buttonIsPressed|param|button": "Te controleren knop",
+  "CoderDojo_Controller.onButtonPress": "Voer iets uit wanneer er een knop op de controller wordt bediend",
+  "CoderDojo_Controller.onButtonPress|param|button": "Welke knop",
+  "CoderDojo_Controller.onButtonPress|param|event": "Knop ingedrukt of losgelaten"
 }
