@@ -8,22 +8,29 @@ using namespace pxt;
 //% color=#000000 weight=100
 
 enum class CoderDojoButton {
-    //% block=up
+    //% block="Up"
     Up = 0,
-    //% block=down
+    //% block="Down"
     Down = 1,
-    //% block=left
+    //% block="Left"
     Left = 2,
-    //% block=right
+    //% block="Right"
     Right = 3,
-    //% block=x
+    //% block="X"
     X = 4,
-    //% block=y
+    //% block="Y"
     Y = 5,
-    //% block=a
+    //% block="A"
     A = 6,
-    //% block=b
+    //% block="B"
     B = 7
+};
+
+enum class CoderDojoButtonState {
+    //% block="pressed"
+    Pressed = 0,
+    //% block="not pressed"
+    NotPressed = 1
 };
 
 namespace CoderDojo_Controller {
@@ -55,24 +62,25 @@ namespace CoderDojo_Controller {
      * Get the button state (pressed or not) for any of the 8 controller buttons. Buttons A and B are the same as on the Micro:bit.
      * @param button the button to query the request, eg: Button.A
      */
-    //% block="button %button is pressed"
+    //% block="button %button is %state"
     //% blockId=coderdojo_controller_button_is_pressed
-    //% icon="\uf192" blockGap=8
-    bool buttonIsPressed(CoderDojoButton button) {
+    bool buttonIsPressed(CoderDojoButton button, CoderDojoButtonState state) {
       if (!initialized) init();
-        
+
+      bool testState = state == CoderDojoButtonState::Pressed;
+
       switch (button) {
-          case CoderDojoButton::A: return uBit.buttonA.isPressed();
-          case CoderDojoButton::B: return uBit.buttonB.isPressed();
-          case CoderDojoButton::Up: return buttonUp->isPressed();
-          case CoderDojoButton::Down: return buttonDown->isPressed();
-          case CoderDojoButton::Left: return buttonLeft->isPressed();
-          case CoderDojoButton::Right: return buttonRight->isPressed();
-          case CoderDojoButton::X: return buttonX->isPressed();
-          case CoderDojoButton::Y: return buttonY->isPressed();
-          default: return false;
+          case CoderDojoButton::A: return uBit.buttonA.isPressed() == testState;
+          case CoderDojoButton::B: return uBit.buttonB.isPressed() == testState;
+          case CoderDojoButton::Up: return buttonUp->isPressed() == testState;
+          case CoderDojoButton::Down: return buttonDown->isPressed() == testState;
+          case CoderDojoButton::Left: return buttonLeft->isPressed() == testState;
+          case CoderDojoButton::Right: return buttonRight->isPressed() == testState;
+          case CoderDojoButton::X: return buttonX->isPressed() == testState;
+          case CoderDojoButton::Y: return buttonY->isPressed() == testState;
+          default: return !testState;
       }
 
-      return false;
+      return !testState;
     }
 }

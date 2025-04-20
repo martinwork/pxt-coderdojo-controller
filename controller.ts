@@ -50,6 +50,14 @@ namespace CoderDojo_Controller {
         Released = DAL.MICROBIT_BUTTON_EVT_UP
     }
 
+    // shim of CoderDojo_Controller::CoderDojoButtonState
+    export enum CoderDojoButtonState {
+        //% block="pressed"
+        Pressed = 0,
+        //% block="not pressed"
+        NotPressed = 1
+    }
+
     export enum CoderDojoLed {
         //% block="red"
         Red
@@ -65,35 +73,31 @@ namespace CoderDojo_Controller {
     //% shim=CoderDojo_Controller::init
     function init(): void { return; }
 
-    //% group=Feedback
-    //% blockId="coderdojo_controller_set_led" block="Turn %led LED %state" icon="\uf080"
-    //% weight=92 blockGap=8
-    export function setLed(led: CoderDojoLed, state: CoderDojoLedState): void {
-        pins.digitalWritePin(DigitalPin.P1, <number>state); // only 1 LED so don't test which led
-    }
-	
-    //% group=Inputs
-    //% blockId="coderdojo_controller_button_is_pressed" block="button %button is pressed"
-    //% weight=95 blockGap=8
-    //% shim=CoderDojo_Controller::buttonIsPressed
-    export function buttonIsPressed(button: CoderDojoButton): boolean { return false; } // MicroBitButton class can only be accessed in c++
-
-    //% group=Inputs
     //% blockId="coderdojo_controller_button_press_on_event" block="on button %button is %event"
-    //% weight=93 blockGap=8
+    //% weight=95 blockGap=8
     export function onButtonPress(button: CoderDojoButtonID, event: CoderDojoButtonEvent, handler: Action) {
         init();
         control.onEvent(<number>button, <number>event, handler);
     }
 
-    pins.setPull(DigitalPin.P2, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P15, PinPullMode.PullUp);
-    pins.setPull(DigitalPin.P16, PinPullMode.PullUp);
-    //pins.setPull(DigitalPin.P1, PinPullMode.PullDown);
-    //pins.digitalWritePin(DigitalPin.P1, 0);	
-    //init();
+    //% block="button %button is %state"
+    //% blockId="coderdojo_controller_button_is_pressed"
+    //% weight=90 blockGap=14
+    //% shim=CoderDojo_Controller::buttonIsPressed
+    export function buttonIsPressed(button: CoderDojoButton, state: CoderDojoButtonState): boolean { return false; } // MicroBitButton class can only be accessed in c++
+
+    //% blockId="coderdojo_controller_set_led" block="turn %led LED %state" icon="\uf080"
+    //% weight=80 blockGap=8
+    export function setLed(led: CoderDojoLed, state: CoderDojoLedState): void {
+        pins.digitalWritePin(DigitalPin.P1, <number>state); // only 1 LED so don't test which led
+    }
+
+    //pins.setPull(DigitalPin.P2, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P15, PinPullMode.PullUp);
+    //pins.setPull(DigitalPin.P16, PinPullMode.PullUp);
+    init();
 }
 

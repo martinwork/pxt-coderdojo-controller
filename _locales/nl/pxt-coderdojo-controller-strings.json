@@ -17,14 +17,14 @@
     "CoderDojo_Controller.CoderDojoButtonID.B|block": "B",
     "CoderDojo_Controller.CoderDojoButtonEvent.Pressed|block": "pressed",
     "CoderDojo_Controller.CoderDojoButtonEvent.Released|block": "released",
+    "CoderDojo_Controller.CoderDojoButtonState.Pressed|block": "pressed",
+    "CoderDojo_Controller.CoderDojoButtonState.NotPressed|block": "not pressed",
     "CoderDojo_Controller.CoderDojoLed.Red|block": "red",
     "CoderDojo_Controller.CoderDojoLedState.Off|block": "off",
     "CoderDojo_Controller.CoderDojoLedState.On|block": "on",
-    "CoderDojo_Controller.setLed|block": "Turn %led LED %state",
-    "CoderDojo_Controller.buttonIsPressed|block": "button %button is pressed",
-    "CoderDojo_Controller.onButtonPress|block": "on button %button is %event",
+    "CoderDojo_Controller.setLed|block": "turn %led LED %state",
+    "CoderDojo_Controller.buttonIsPressed|block": "button %button is %state",
+    "CoderDojo_Controller.onButtonPress|block": "on button %button %event",
     "CoderDojo_Controller|block": "Dojo Controller",
-    "{id:category}CoderDojo_Controller": "CoderDojo_Game_Controller",
-    "{id:group}Feedback": "Feedback",
-    "{id:group}Inputs": "Inputs"
+    "{id:category}CoderDojo_Controller": "CoderDojo_Game_Controller"
 }
