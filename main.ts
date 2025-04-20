@@ -63,7 +63,7 @@ namespace CoderDojo_Controller {
     }
 	
     //% shim=CoderDojo_Controller::init
-    function init(): void;
+    function init(): void {}
 
     //% group=Feedback
     //% blockId="coderdojo_controller_set_led" block="Turn %led LED %state" icon="\uf080"
@@ -77,7 +77,7 @@ namespace CoderDojo_Controller {
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% weight=95 blockGap=8
     //% shim=CoderDojo_Controller::isButtonPressed
-    export function isButtonPressed(button: CoderDojoButton): bool; // MicroBitButton class can only be accessed in c++
+    export function buttonIsPressed(button: CoderDojoButton): boolean { return false; } // MicroBitButton class can only be accessed in c++
 
     //% group=Inputs
     //% blockId="coderdojo_controller_button_press_on_event" block="on button %button|press %event"
