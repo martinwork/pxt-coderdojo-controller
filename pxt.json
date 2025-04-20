@@ -10,6 +10,8 @@
         "README.md",
         "controller.ts",
         "controller.cpp",
+        "_locales/en/pxt-coderdojo-controller-jsdoc-strings.json",
+        "_locales/en/pxt-coderdojo-controller-strings.json",
         "_locales/nl/pxt-coderdojo-controller-jsdoc-strings.json",
         "_locales/nl/pxt-coderdojo-controller-strings.json"
     ],
