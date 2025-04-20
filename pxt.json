@@ -8,9 +8,7 @@
     },
     "files": [
         "README.md",
-        "main.ts",
-        "shims.d.ts",
-        "enums.d.ts",
+        "controller.ts",
         "controller.cpp",
         "_locales/nl/pxt-coderdojo-controller-jsdoc-strings.json",
         "_locales/nl/pxt-coderdojo-controller-strings.json"
