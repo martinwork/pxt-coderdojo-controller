@@ -4,94 +4,85 @@
 //% weight=100 color=#000000 icon="\uf11b" block="Dojo Controller"
 //% groups='["Inputs", "Feedback"]'
 namespace CoderDojo_Controller {
-	/**
-	*CoderDojo Controller Buttons
-	*/
-	export enum ControllerButtons {
-	    Up,
-	    Down,
-	    Left,
-	    Right,
-	    A,
-	    B,
-	    X,
-	    Y
-	}
-
-    /**
-    *CoderDojo Controller Button Pins
-    */
-    export enum ControllerButtonPins {
-        //% block="Up"
-        Up = DAL.MICROBIT_ID_IO_P15,
-        //% block="Down"
-        Down = DAL.MICROBIT_ID_IO_P16,
-        //% block="Left"
-        Left = DAL.MICROBIT_ID_IO_P13,
-        //% block="Right"
-        Right = DAL.MICROBIT_ID_IO_P14,
-        //% block="A"
-        A = DAL.MICROBIT_ID_BUTTON_A,
-        //% block="B"
-        B = DAL.MICROBIT_ID_BUTTON_B,
-        //% block="X"
-        X = DAL.MICROBIT_ID_IO_P8,
-        //% block="Y"
-        Y = DAL.MICROBIT_ID_IO_P2
+    // shim of CoderDojo_Controller::CoderDojoButton
+    export enum CoderDojoButton {
+        //% block="up"
+        Up = 0,
+        //% block="down"
+        Down = 1,
+        //% block="left"
+        Left = 2,
+        //% block="right"
+        Right = 3,
+        //% block="x"
+        X = 4,
+        //% block="y"
+        Y = 5,
+        //% block="a"
+        A = 6,
+        //% block="b"
+        B = 7
     }
 
-    /**
-    *CoderDojo Controller Button Events
-    */
-    export enum ControllerButtonEvents {
+    export enum CoderDojoButtonID {
+        //% block="up"
+        Up = DAL.MICROBIT_ID_IO_P15,
+        //% block="down"
+        Down = DAL.MICROBIT_ID_IO_P16,
+        //% block="left"
+        Left = DAL.MICROBIT_ID_IO_P13,
+        //% block="right"
+        Right = DAL.MICROBIT_ID_IO_P14,
+        //% block="x"
+        X = DAL.MICROBIT_ID_IO_P8,
+        //% block="y"
+        Y = DAL.MICROBIT_ID_IO_P2,
+        //% block="a"
+        A = DAL.MICROBIT_ID_BUTTON_A,
+        //% block="b"
+        B = DAL.MICROBIT_ID_BUTTON_B
+    }
+
+    export enum CoderDojoButtonEvent {
         //% block="pressed"
         Pressed = DAL.MICROBIT_BUTTON_EVT_DOWN,
         //% block="released"
         Released = DAL.MICROBIT_BUTTON_EVT_UP
     }
 
-    /**
-     *
-     */
+    export enum CoderDojoLed {
+        //% block="red"
+        Red
+    }
+
+    export enum CoderDojoLedState {
+        //% block="off"
+        Off = 0,
+        //% block="on"
+	On = 1
+    }
+	
     //% shim=CoderDojo_Controller::init
-    function init(): void {
-        return;
-    }
+    function init(): void;
 
-    /**
-     * Set red LED
-     * @param run_time is the length of time the motor will run in ms, eg: 100
-     */
     //% group=Feedback
-    //% blockId="coderdojo_controller_set_led" block="Turn red LED %state" icon="\uf080"
+    //% blockId="coderdojo_controller_set_led" block="Turn %led LED %state" icon="\uf080"
     //% weight=92 blockGap=8
-    export function setLed(state: number): void {
-        pins.digitalWritePin(DigitalPin.P1, state)
+    export function setLed(led: CoderDojoLed, state: CoderDojoLedState): void {
+        pins.digitalWritePin(DigitalPin.P1, <number>state); // only 1 LED so don't test which led
     }
-
-    /**
-     * Determines if a CoderDojo Controller button is pressed
-     * @param button press to be checked
-     */
+	
     //% group=Inputs
     //% blockId="coderdojo_controller_ispressed" block="button %button|is pressed"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% weight=95 blockGap=8
-    export function buttonIsPressed(button: ControllerButtonPins): boolean {
-        const pin = <DigitalPin><number>button;
-        return pins.digitalReadPin(pin) == 0;
-    }
+    //% shim=CoderDojo_Controller::isButtonPressed
+    export function isButtonPressed(button: CoderDojoButton): bool; // MicroBitButton class can only be accessed in c++
 
-    /**
-     * Do something when one of the CoderDojo Controller Buttons is pressed
-     * @param button press to be checked
-     * @param event happening on the button, eg: click
-     */
     //% group=Inputs
     //% blockId="coderdojo_controller_button_press_on_event" block="on button %button|press %event"
-    //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
     //% weight=93 blockGap=8
-    export function onButtonPress(button: ControllerButtonPins, event: ControllerButtonEvents, handler: Action) {
+    export function onButtonPress(button: CoderDojoButtonID, event: CoderDojoButtonEvent, handler: Action) {
         init();
         control.onEvent(<number>button, <number>event, handler);
     }
