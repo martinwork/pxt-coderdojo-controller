@@ -56,7 +56,7 @@ namespace CoderDojo_Controller {
      * @param button the button to query the request, eg: Button.A
      */
     //% block="button|%button|is pressed"
-    //% blockId=coderdojo_controller_isbuttonpressed
+    //% blockId=coderdojo_controller_button_is_pressed
     //% icon="\uf192" blockGap=8
     bool buttonIsPressed(CoderDojoButton button) {
       if (!initialized) init();
