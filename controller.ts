@@ -70,7 +70,7 @@ namespace CoderDojo_Controller {
     }
 	
     //% shim=CoderDojo_Controller::init
-    function init(): void {}
+    function init(): void { return; }
 
     //% blockId="coderdojo_controller_button_press_on_event" block="on button %button is %event"
     //% weight=95 blockGap=8
