@@ -58,7 +58,7 @@ namespace CoderDojo_Controller {
     //% block="button|%button|is pressed"
     //% blockId=coderdojo_controller_isbuttonpressed
     //% icon="\uf192" blockGap=8
-    bool isButtonPressed(CoderDojoButton button) {
+    bool buttonIsPressed(CoderDojoButton button) {
       if (!initialized) init();
         
       switch (button) {
