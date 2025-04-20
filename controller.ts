@@ -59,11 +59,11 @@ namespace CoderDojo_Controller {
         //% block="off"
         Off = 0,
         //% block="on"
-	On = 1
+        On = 1
     }
 	
     //% shim=CoderDojo_Controller::init
-    function init(): void {}
+    function init(): void { return; }
 
     //% group=Feedback
     //% blockId="coderdojo_controller_set_led" block="Turn %led LED %state" icon="\uf080"
@@ -73,8 +73,7 @@ namespace CoderDojo_Controller {
     }
 	
     //% group=Inputs
-    //% blockId="coderdojo_controller_ispressed" block="button %button|is pressed"
-    //% button.fieldEditor="gridpicker" button.fieldOptions.columns=3
+    //% blockId="coderdojo_controller_button_is_pressed" block="button %button|is pressed"
     //% weight=95 blockGap=8
     //% shim=CoderDojo_Controller::isButtonPressed
     export function buttonIsPressed(button: CoderDojoButton): boolean { return false; } // MicroBitButton class can only be accessed in c++
