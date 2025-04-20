@@ -55,42 +55,42 @@ CoderDojo_Controller.onButtonPress(CoderDojo_Controller.CoderDojoButtonID.B, Cod
 let NrClicks = 0
 NrClicks = 0
 basic.forever(function () {
-    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.Up)) {
+    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.Up, CoderDojo_Controller.CoderDojoButtonState.Pressed)) {
         led.plot(1, 3)
     } else {
         led.unplot(1, 3)
     }
-    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.Down)) {
+    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.Down, CoderDojo_Controller.CoderDojoButtonState.Pressed)) {
         led.plot(0, 4)
     } else {
         led.unplot(0, 4)
     }
-    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.Left)) {
+    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.Left, CoderDojo_Controller.CoderDojoButtonState.Pressed)) {
         led.plot(0, 3)
     } else {
         led.unplot(0, 3)
     }
-    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.Right)) {
+    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.Right, CoderDojo_Controller.CoderDojoButtonState.Pressed)) {
         led.plot(1, 4)
     } else {
         led.unplot(1, 4)
     }
-    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.X)) {
+    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.X, CoderDojo_Controller.CoderDojoButtonState.Pressed)) {
         led.plot(3, 3)
     } else {
         led.unplot(3, 3)
     }
-    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.Y)) {
+    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.Y, CoderDojo_Controller.CoderDojoButtonState.Pressed)) {
         led.plot(4, 3)
     } else {
         led.unplot(4, 3)
     }
-    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.A)) {
+    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.A, CoderDojo_Controller.CoderDojoButtonState.Pressed)) {
         led.plot(3, 4)
     } else {
         led.unplot(3, 4)
     }
-    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.B)) {
+    if (CoderDojo_Controller.buttonIsPressed(CoderDojo_Controller.CoderDojoButton.B, CoderDojo_Controller.CoderDojoButtonState.Pressed)) {
         led.plot(4, 4)
     } else {
         led.unplot(4, 4)

@@ -1,7 +1,7 @@
 {
-    "name": "pxt-coderdojo-controller",
-    "version": "0.0.1",
-    "description": "Blocks for driving the CoderDojo Controller",
+    "name": "coderdojo-controller",
+    "version": "1.0.0",
+    "description": "CoderDojo DIY micro:bit Game Controller",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -10,8 +10,6 @@
         "README.md",
         "controller.ts",
         "controller.cpp",
-        "_locales/en/pxt-coderdojo-controller-jsdoc-strings.json",
-        "_locales/en/pxt-coderdojo-controller-strings.json",
         "_locales/nl/pxt-coderdojo-controller-jsdoc-strings.json",
         "_locales/nl/pxt-coderdojo-controller-strings.json"
     ],
