@@ -8,7 +8,7 @@ This is a DIY Game Controller for Micro:bit that costs under 4€ / 5$ if parts 
 * 8 Buttons: 🡅, 🡇, 🡄, 🡆, X, Y, A, B
 * 2x AAA battery, On/Off switch and LED indicator
 * Speaker and customizable red LED
-* Micro USB cable storage compartiment
+* Micro USB cable storage compartment
 * Protected against short circuit and wrong i/o usage
 * Compatible with micro:bit v1.x and v2.x
 * More than 100 hours battery time
