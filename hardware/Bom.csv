@@ -7,7 +7,7 @@ LD1	LED Red SMD0805	Led Red 625nm / 120 deg / 20mA / 2V / SMD 0805	LCSC	C965812	
 LD2	LED Green SMD0805	Led Green 568nm / 120 deg / 20mA / 2,2V / SMD 0805	LCSC	C965815	1	€ 0,02	€ 0,02
 F1	Polyfuse 500mA SMD1812	Polyfuse 30V/500mA	Aliexpress	https://www.aliexpress.com/item/1005006431435556.html	1	€ 0,08	€ 0,08
 BUZ1	9042 16R Passive	Passive piezo sounder 3-5v	Aliexpress	https://www.aliexpress.com/item/1005006230919996.html	1	€ 0,19	€ 0,19
-SW1,2,3,4,6,7,8,9	Pushbutton 6x6x5mm	drukknop (on)-off 6x6mm print height 5mm	Aliexpress	https://www.aliexpress.com/item/1005001897291190.html	8	€ 0,05	€ 0,40
+SW1,2,3,4,6,7,8,9	Pushbutton 6x6x5mm	Pushbutton (on)-off 6x6mm print height 5mm	Aliexpress	https://www.aliexpress.com/item/1005001897291190.html	8	€ 0,05	€ 0,40
 SW5	Switch SS-12F23	50v/0,5A spdt	Aliexpress	https://www.aliexpress.com/item/1005004508647910.html	1	€ 0,08	€ 0,08
 BATT1	2XAAA Box	Battery holder 2x AAA with center hole	Aliexpress	https://www.aliexpress.com/item/1005006274732583.html	1	€ 0,36	€ 0,36
 J1	Edge connector horizontal SMD	Micro:bit edge connector	Aliexpress	https://www.aliexpress.com/item/1005006206948907.html	1	€ 0,85	€ 0,85
