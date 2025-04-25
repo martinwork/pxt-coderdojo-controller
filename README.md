@@ -37,6 +37,12 @@ The blocks work the same as the standard micro:bit A and B buttons and can be us
 
 Note that the A and B buttons on the micro:bit have the same function as the A and B buttons on the controller. You can use the extension without the controller hardware and have the extra buttons available when plugged into the controller.
 
+## Build
+cd into project folder
+npm install pxt
+pxt target microbit
+pxt build
+
 ## Supported targets
 
 * for PXT/microbit

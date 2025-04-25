@@ -1,20 +1,17 @@
+// c++ functions for the CoderDojo Controller Makecode extension.
+// needed to make fully use of the MicroBitButton class which handles bounce surpression.
+// new MicroBitButton(...) cannot be done in ts
 #include "pxt.h"
 using namespace pxt;
 
-/**
- * Blocks for driving the CoderDojo Controller
- */
-
-//% color=#000000 weight=100
-
 enum class CoderDojoButton {
-    //% block="Up"
+    //% block="🡅"
     Up = 0,
-    //% block="Down"
+    //% block="🡇"
     Down = 1,
-    //% block="Left"
+    //% block="🡄"
     Left = 2,
-    //% block="Right"
+    //% block="🡆"
     Right = 3,
     //% block="X"
     X = 4,
@@ -60,11 +57,12 @@ namespace CoderDojo_Controller {
     }
 
     /**
-     * Get the button state (pressed or not) for any of the 8 controller buttons. Buttons A and B are the same as on the Micro:bit.
-     * @param button the button to query the request, eg: Button.A
+     * Get the button state (pressed or not) for any of the 8 controller buttons. Buttons A and B are the same as on the Micro:bit
+     * @param button the button to query, eg: CoderDojoButton.Left
      */
     //% block="button %button is %state"
     //% blockId=coderdojo_controller_button_is_pressed
+    //% weight=90 blockGap=14
     bool buttonIsPressed(CoderDojoButton button, CoderDojoButtonState state) {
       if (!initialized) init();
 

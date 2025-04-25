@@ -1,0 +1,11 @@
+{
+  "CoderDojo_Controller": "Blokken om de CoderDojo Controller aan te sturen",
+  "CoderDojo_Controller.buttonIsPressed": "Haal de status op (ingedrukt of niet) voor een van de 8 controllerknoppen. Knoppen A en B zijn hetzelfde als op de Micro:bit",
+  "CoderDojo_Controller.buttonIsPressed|param|button": "De te raadplegen knop, bijvoorbeeld: CoderDojoButton.Left",
+  "CoderDojo_Controller.onButtonPress": "Voer code uit wanneer een knop op de controller wordt ingedrukt of losgelaten. Knoppen A en B op de controller zijn hetzelfde als knoppen A en B op de Micro:bit",
+  "CoderDojo_Controller.onButtonPress|param|button": "De knop om op te vragen, bijvoorbeeld: CoderDojoButton.Left",
+  "CoderDojo_Controller.onButtonPress|param|event": "Voer code uit wanneer de knop wordt ingedrukt of losgelaten, bijvoorbeeld: CoderDojoButtonEvent.Pressed",
+  "CoderDojo_Controller.setLed": "Zet een LED op de controller aan of uit",
+  "CoderDojo_Controller.setLed|param|led": "Welke LED: er is momenteel slechts één bestuurbare LED op de controller: CoderDojoLed.Red",
+  "CoderDojo_Controller.setLed|param|state": "Zet de LED aan of uit, bijvoorbeeld: CoderDojoLedState.On"
+}

@@ -10,8 +10,12 @@
         "README.md",
         "controller.ts",
         "controller.cpp",
-        "_locales/nl/pxt-coderdojo-controller-jsdoc-strings.json",
-        "_locales/nl/pxt-coderdojo-controller-strings.json"
+        "shims.d.ts",
+        "enums.d.ts",
+        "_locales/nl/coderdojo-controller-jsdoc-strings.json",
+        "_locales/nl/coderdojo-controller-strings.json",
+        "_locales/fr/coderdojo-controller-jsdoc-strings.json",
+        "_locales/fr/coderdojo-controller-strings.json"
     ],
     "testFiles": [
         "tests.ts"
