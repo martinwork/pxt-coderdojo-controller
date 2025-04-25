@@ -24,7 +24,7 @@
   "CoderDojoLedState.On|block": "allumer",
   "CoderDojo_Controller.buttonIsPressed|block": "bouton %button est %state",
   "CoderDojo_Controller.onButtonPress|block": "lorsque le bouton %button est %event",
-  "CoderDojo_Controller.setLed|block": "|%state LED %led",
+  "CoderDojo_Controller.setLed|block": "mettre %state LED %led",
   "CoderDojo_Controller|block": "Dojo Controller",
   "{id:category}CoderDojo_Controller": "CoderDojo_Controller"
 }
