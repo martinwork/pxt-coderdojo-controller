@@ -4,6 +4,7 @@
 #include "pxt.h"
 using namespace pxt;
 
+// Will also be generated in enums.d.ts
 enum class CoderDojoButton {
     //% block="🡅"
     Up = 0,
@@ -23,6 +24,7 @@ enum class CoderDojoButton {
     B = 7
 };
 
+// Will also be generated in enums.d.ts
 enum class CoderDojoButtonState {
     //% block="pressed"
     Pressed = 0,
@@ -56,13 +58,8 @@ namespace CoderDojo_Controller {
         initialized = true;
     }
 
-    /**
-     * Get the button state (pressed or not) for any of the 8 controller buttons. Buttons A and B are the same as on the Micro:bit
-     * @param button the button to query, eg: CoderDojoButton.Left
-     */
-    //% block="button %button is %state"
-    //% blockId=coderdojo_controller_button_is_pressed
-    //% weight=90 blockGap=14
+    // Don't use the autogenerator for shims.d.ts, as the makecode simulator needs a (dummy) function body which the autogenerator doesn't generate
+    //%
     bool buttonIsPressed(CoderDojoButton button, CoderDojoButtonState state) {
       if (!initialized) init();
 

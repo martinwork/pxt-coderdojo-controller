@@ -2,6 +2,7 @@
   "CoderDojo_Controller": "Blokken om de CoderDojo Controller aan te sturen",
   "CoderDojo_Controller.buttonIsPressed": "Haal de status op (ingedrukt of niet) voor een van de 8 controllerknoppen. Knoppen A en B zijn hetzelfde als op de Micro:bit",
   "CoderDojo_Controller.buttonIsPressed|param|button": "De te raadplegen knop, bijvoorbeeld: CoderDojoButton.Left",
+  "CoderDojo_Controller.buttonIsPressed|param|state": "Controleer of de knop is ingedrukt, of niet is ingedrukt, bijvoorbeeld: CoderDojoButtonState.Pressed",
   "CoderDojo_Controller.onButtonPress": "Voer code uit wanneer een knop op de controller wordt ingedrukt of losgelaten. Knoppen A en B op de controller zijn hetzelfde als knoppen A en B op de Micro:bit",
   "CoderDojo_Controller.onButtonPress|param|button": "De knop om op te vragen, bijvoorbeeld: CoderDojoButton.Left",
   "CoderDojo_Controller.onButtonPress|param|event": "Voer code uit wanneer de knop wordt ingedrukt of losgelaten, bijvoorbeeld: CoderDojoButtonEvent.Pressed",

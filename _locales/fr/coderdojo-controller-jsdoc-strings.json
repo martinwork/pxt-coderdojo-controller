@@ -2,6 +2,7 @@
   "CoderDojo_Controller": "Blocks for using the CoderDojo Game Controller",
   "CoderDojo_Controller.buttonIsPressed": "Obtenez l'état du bouton (appuyé ou non) pour l'un des 8 boutons de la manette. Les boutons A et B sont les mêmes que sur le Micro:bit",
   "CoderDojo_Controller.buttonIsPressed|param|button": "Le bouton à interroger, par exemple : CoderDojoButton.Left",
+  "CoderDojo_Controller.buttonIsPressed|param|state": "Vérifiez si le bouton est enfoncé ou non, par exemple : CoderDojoButtonState.Pressed",
   "CoderDojo_Controller.onButtonPress": "Exécutez du code lorsqu’un bouton de la manette est appuyé ou relâché. Les boutons A et B sur la manette sont les mêmes que sur le Micro:bit",
   "CoderDojo_Controller.onButtonPress|param|button": "Le bouton à interroger, par exemple : CoderDojoButton.Left",
   "CoderDojo_Controller.onButtonPress|param|event": "Exécutez du code lorsque le bouton est appuyé ou relâché, par exemple: CoderDojoButtonEvent.Pressed",

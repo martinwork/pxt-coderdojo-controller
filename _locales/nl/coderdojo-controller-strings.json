@@ -19,7 +19,7 @@
   "CoderDojoButtonID.Y|block": "Y",
   "CoderDojoButtonState.NotPressed|block": "niet ingedrukt",
   "CoderDojoButtonState.Pressed|block": "ingedrukt",
-  "CoderDojoLed.Red|block": "rood",
+  "CoderDojoLed.Red|block": "rode",
   "CoderDojoLedState.Off|block": "aan",
   "CoderDojoLedState.On|block": "uit",
   "CoderDojo_Controller.buttonIsPressed|block": "knop %button is %state",
