@@ -38,7 +38,7 @@ The PCB (without components) needs to be manufactored by a company. These are th
 - Select your desired quantity (the more the cheaper per board)
 - Change PCB Color to Black
 - Change Surface Finish to LeadFree HASL (If ROHS is required in your country, always the case for the EU)
-- Choose Mark on PCB: Remove Mark
+- Choose Mark on PCB: Remove Mark  
 All other options are oke by default. Complete the order process.
 
 ## Step 3: 3D Print the cable holder

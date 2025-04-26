@@ -1,17 +1,17 @@
 # pxt-coderdojo-controller
-This is a DIY Game Controller for Micro:bit that costs under 4€ / 5$ if parts are ordered in volume. The USB cable can be stored at the back of the controller together with 2 AAA batteries.
+This is an open-source, low-cost, do-it-yourself game controller for the micro:bit. You cannot purchase a finished product. Instead, you'll need to gather all the components and assemble it yourself or with your class.
 
 ![Controller front image](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Front%203d.jpg?raw=true)
 ![Controller back image](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Back%20cable.jpg?raw=true)
 
 ## Features
-* 8 Buttons: 🡅, 🡇, 🡄, 🡆, X, Y, A, B
-* 2x AAA battery, On/Off switch and LED indicator
-* Speaker and customizable red LED
+* 8 buttons: Up, Down, Left, Right, X, Y, A, B
+* 2x AAA batteries, On/Off switch, and LED indicator
+* Built-in speaker and customizable red LED
 * Micro USB cable storage compartment
-* Protected against short circuit and wrong i/o usage
+* Protection against short circuits and incorrect I/O usage
 * Compatible with micro:bit v1.x and v2.x
-* More than 100 hours battery time
+* Over 100 hours of battery life
 
 ## Hardware building and sourcing parts
 The (empty) PCB can be easily manufactured by any PCB company, for example JLCPCB which is known as the cheapest. The cable holder at the back can be 3D printed with any 3D printer, for example the affordable Creality Ender V2 or V3.
@@ -42,7 +42,7 @@ cd into project folder
 npm install pxt  
 pxt target microbit  
 pxt gendocs --locs  
-(update translations in _locales/)  
+if needed: update translations in _locales/  
 pxt build  
 
 ## Supported targets
