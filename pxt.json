@@ -1,6 +1,6 @@
 {
     "name": "coderdojo-controller",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "CoderDojo DIY micro:bit Game Controller",
     "license": "MIT",
     "dependencies": {
