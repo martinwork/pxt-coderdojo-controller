@@ -28,11 +28,6 @@ enum CoderDojoButtonEvent {
     Released = DAL.MICROBIT_BUTTON_EVT_UP
 }
 
-enum CoderDojoLed {
-    //% block="red"
-    Red
-}
-
 enum CoderDojoLedState {
     //% block="off"
     Off = 0,
@@ -44,15 +39,15 @@ enum CoderDojoLedState {
  * Blocks for using the CoderDojo Game Controller
  */
 //% weight=100 color=#000000 icon="\uf11b" block="Dojo Controller"
-namespace CoderDojo_Controller {
+namespace coderDojoController {
 
-    //% shim=CoderDojo_Controller::init
+    //% shim=coderDojoController::init
     // Don't use the autogenerator for shims.d.ts, as the makecode simulator needs a (dummy) function body which the autogenerator doesn't generate
     function init(): void { return; }
 
     /**
      * Run code when a button on the controller is pressed or released. Buttons A and B on the controller are the same as buttons A and B on the Micro:bit
-     * @param button the button to query, eg: CoderDojoButton.Left
+     * @param button the button to query, eg: CoderDojoButtonID.Left
      * @param event run code when the button is either pressed or released, eg: CoderDojoButtonEvent.Pressed
      */
     //% block="on button %button %event"
@@ -69,20 +64,19 @@ namespace CoderDojo_Controller {
      */
     //% block="button %button is %state"
     //% blockId=coderdojo_controller_button_is_pressed
-    //% weight=90 blockGap=14 shim=CoderDojo_Controller::buttonIsPressed
+    //% weight=90 blockGap=14 shim=coderDojoController::buttonIsPressed
     // Don't use the autogenerator for shims.d.ts, as the makecode simulator needs a (dummy) function body which the autogenerator doesn't generate
     export function buttonIsPressed(button: CoderDojoButton, state: CoderDojoButtonState): boolean { return false; }
 
     /**
-     * Turn a LED on the controller on or off.
-     * @param led which LED, there is currentely only 1 controllable LED on the controller which is CoderDojoLed.Red
+     * Turn the red LED on the controller on or off
      * @param state turn the LED either on or off, eg: CoderDojoLedState.On
      */
-    //% block="turn %led LED %state" icon="\uf080"
-    //% blockId="coderdojo_controller_set_led"
+    //% block="turn red LED %state" icon="\uf080"
+    //% blockId="coderdojo_controller_set_red_led"
     //% weight=80 blockGap=8
-    export function setLed(led: CoderDojoLed, state: CoderDojoLedState): void {
-        pins.digitalWritePin(DigitalPin.P1, <number>state); // only 1 LED so don't test which led
+    export function setRedLed(state: CoderDojoLedState): void {
+        pins.digitalWritePin(DigitalPin.P1, <number>state);
     }
 
     // pull directions are set when creating MicroBitButton() instances in init()

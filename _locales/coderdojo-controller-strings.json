@@ -19,12 +19,11 @@
   "CoderDojoButtonID.Y|block": "Y",
   "CoderDojoButtonState.NotPressed|block": "not pressed",
   "CoderDojoButtonState.Pressed|block": "pressed",
-  "CoderDojoLed.Red|block": "red",
   "CoderDojoLedState.Off|block": "off",
   "CoderDojoLedState.On|block": "on",
-  "CoderDojo_Controller.buttonIsPressed|block": "button %button is %state",
-  "CoderDojo_Controller.onButtonPress|block": "on button %button %event",
-  "CoderDojo_Controller.setLed|block": "turn %led LED %state",
-  "CoderDojo_Controller|block": "Dojo Controller",
-  "{id:category}CoderDojo_Controller": "CoderDojo_Controller"
+  "coderDojoController.buttonIsPressed|block": "button %button is %state",
+  "coderDojoController.onButtonPress|block": "on button %button %event",
+  "coderDojoController.setRedLed|block": "turn red LED %state",
+  "coderDojoController|block": "Dojo Controller",
+  "{id:category}CoderDojoController": "CoderDojoController"
 }

@@ -1,12 +1,11 @@
 {
-  "CoderDojo_Controller": "Blocks for using the CoderDojo Game Controller",
-  "CoderDojo_Controller.buttonIsPressed": "Get the button state (pressed or not) for any of the 8 controller buttons. Buttons A and B are the same as on the Micro:bit",
-  "CoderDojo_Controller.buttonIsPressed|param|button": "the button to query, eg: CoderDojoButton.Left",
-  "CoderDojo_Controller.buttonIsPressed|param|state": "check if button is pressed or not, eg: CoderDojoButtonState.Pressed",
-  "CoderDojo_Controller.onButtonPress": "Run code when a button on the controller is pressed or released. Buttons A and B on the controller are the same as buttons A and B on the Micro:bit",
-  "CoderDojo_Controller.onButtonPress|param|button": "the button to query, eg: CoderDojoButton.Left",
-  "CoderDojo_Controller.onButtonPress|param|event": "run code when the button is either pressed or released, eg: CoderDojoButtonEvent.Pressed",
-  "CoderDojo_Controller.setLed": "Turn a LED on the controller on or off.",
-  "CoderDojo_Controller.setLed|param|led": "which LED, there is currentely only 1 controllable LED on the controller which is CoderDojoLed.Red",
-  "CoderDojo_Controller.setLed|param|state": "turn the LED either on or off, eg: CoderDojoLedState.On"
+  "coderDojoController": "Blocks for using the CoderDojo Game Controller",
+  "coderDojoController.buttonIsPressed": "Get the button state (pressed or not) for any of the 8 controller buttons. Buttons A and B are the same as on the Micro:bit",
+  "coderDojoController.buttonIsPressed|param|button": "the button to query, eg: CoderDojoButton.Left",
+  "coderDojoController.buttonIsPressed|param|state": "check if button is pressed or not, eg: CoderDojoButtonState.Pressed",
+  "coderDojoController.onButtonPress": "Run code when a button on the controller is pressed or released. Buttons A and B on the controller are the same as buttons A and B on the Micro:bit",
+  "coderDojoController.onButtonPress|param|button": "the button to query, eg: CoderDojoButtonID.Left",
+  "coderDojoController.onButtonPress|param|event": "run code when the button is either pressed or released, eg: CoderDojoButtonEvent.Pressed",
+  "coderDojoController.setRedLed": "Turn the red LED on the controller on or off",
+  "coderDojoController.setRedLed|param|state": "turn the LED either on or off, eg: CoderDojoLedState.On"
 }

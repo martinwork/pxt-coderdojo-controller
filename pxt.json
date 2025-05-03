@@ -1,6 +1,6 @@
 {
     "name": "coderdojo-controller",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "CoderDojo DIY micro:bit Game Controller",
     "license": "MIT",
     "dependencies": {
@@ -18,7 +18,7 @@
         "_locales/fr/coderdojo-controller-strings.json"
     ],
     "testFiles": [
-        "tests.ts"
+        "test.ts"
     ],
     "public": true
 }

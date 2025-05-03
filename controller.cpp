@@ -32,7 +32,7 @@ enum class CoderDojoButtonState {
     NotPressed = 1
 };
 
-namespace CoderDojo_Controller {
+namespace coderDojoController {
     bool initialized = false;
     MicroBitButton* buttonUp;
     MicroBitButton* buttonDown;
