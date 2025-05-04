@@ -28,13 +28,13 @@ The blocks work the same as the standard micro:bit A and B buttons and can be us
 * An event driven approach: use the ``on button pressed`` block. The code inside gets executed when a button is pressed/clicked. The behaviour can be changed to execute the code if the button is released instead.
 
 ```blocks
-coderDojoController.onButtonPress(CoderDojoButtonID.X, CoderDojoButtonEvent.Released, function () {
+coderDojoController.onButtonPress(CoderDojoButtonID.X, CoderDojoButtonEvent.Pressed, function () {
     coderDojoController.setRedLed(CoderDojoLedState.On)
 })
 ```
 
 ```blocks
-coderDojoController.onButtonPress(CoderDojoButtonID.X, CoderDojoButtonEvent.Pressed, function () {
+coderDojoController.onButtonPress(CoderDojoButtonID.X, CoderDojoButtonEvent.Released, function () {
     coderDojoController.setRedLed(CoderDojoLedState.Off)
 })
 ```
@@ -44,9 +44,9 @@ coderDojoController.onButtonPress(CoderDojoButtonID.X, CoderDojoButtonEvent.Pres
 ```blocks
 basic.forever(function () {
     if (coderDojoController.buttonIsPressed(CoderDojoButton.X, CoderDojoButtonState.Pressed)) {
-        coderDojoController.setRedLed(CoderDojoLedState.Off)
-    } else {
         coderDojoController.setRedLed(CoderDojoLedState.On)
+    } else {
+        coderDojoController.setRedLed(CoderDojoLedState.Off)
     }
 })
 ```
