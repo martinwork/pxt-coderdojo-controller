@@ -25,18 +25,21 @@ After adding the extension, you'll find the specific blocks for this controller 
 
 The blocks work the same as the standard micro:bit A and B buttons and can be used in 2 ways:  
 
-1. An event driven approach: use the ``on button pressed`` block. The code inside gets executed when a button is pressed/clicked. The behaviour can be changed to execute the code if the button is released instead.
+* An event driven approach: use the ``on button pressed`` block. The code inside gets executed when a button is pressed/clicked. The behaviour can be changed to execute the code if the button is released instead.
 
 ```blocks
 coderDojoController.onButtonPress(CoderDojoButtonID.X, CoderDojoButtonEvent.Released, function () {
     coderDojoController.setRedLed(CoderDojoLedState.On)
 })
+```
+
+```blocks
 coderDojoController.onButtonPress(CoderDojoButtonID.X, CoderDojoButtonEvent.Pressed, function () {
     coderDojoController.setRedLed(CoderDojoLedState.Off)
 })
 ```
 
-2. Alternatively, a loop driven approach can be used with a standard ``if`` block combined with the ``button is pressed`` function. The code inside the ``if`` block will be executed multiple times, as long as the button is being pressed.
+* Alternatively, a loop driven approach can be used with a standard ``if`` block combined with the ``button is pressed`` function. The code inside the ``if`` block will be executed multiple times, as long as the button is being pressed.
 
 ```blocks
 basic.forever(function () {
