@@ -1,4 +1,12 @@
 ## Hardware building guide
+The (empty) PCB can be easily manufactured by any PCB company, for example JLCPCB which is known as the cheapest. The cable holder at the back can be 3D printed with any 3D printer, for example the affordable Creality Ender V2 or V3.
+
+Other parts can be ordered at various electronics suppliers such as LCSC, Aliexpress, Digikey, Farnell, ... The most difficult part to source will be the Micro:bit EDGE Connector. This needs to be the horizontal SMD type. Start finding this connector first before deciding to build this project.
+
+Soldering can be done with (Lead free) soldering paste and a reflow oven, or if you are a bit handy it can also be done with a classical soldering iron, lead-free soldering wire and some flux. In that case it will be handy to have something to keep the parts in place while soldering, such as a screwdriver.
+
+## Tools needed
+
 You'll needs some tools and skills to build this project.
 - A soldering iron and lead-free soldering wire
 - Optionally, a reflow oven OR a hot air gun. Using this option you'll also need lead-free solder paste, such as Chipquik TS391SNL
@@ -70,3 +78,8 @@ Next, put the battery box through the printed cable holder at the back of the pc
 Always make sure to put the power switch to the OFF position when placing or removing the micro:bit.
 
 Enjoy!
+
+## Optional: Print a storage case
+STL files are available in the CAD Files folder for printing a storage case from 2 till 7 controllers
+![PCB Components](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/hardware/CAD%20Images/Case%203D%20Print.png?raw=true)
+![PCB Components](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Case%202.jpg?raw=true)
