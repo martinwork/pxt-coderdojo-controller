@@ -71,3 +71,7 @@ pxt build
 MIT  
 
 ![PCB Components](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Case%202.jpg?raw=true)
+
+```package
+coderdojo-controller=github:jimd80/pxt-coderdojo-controller
+```
