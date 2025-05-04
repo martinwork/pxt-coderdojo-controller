@@ -66,7 +66,7 @@ Soldering SMD parts can be done in several ways, there are many tutorials online
 ![PCB Components](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/hardware/CAD%20Images/PCB%202D.png?raw=true)
 
 ## Step 5: Solder the Edge connector
-The EDGE connector is preferably soldered with a soldering iron as it is not clear if it can withstand 240 degrees hot air required for lead-free soldering. Use extra flux to create smooth joints.
+The EDGE connector is preferably soldered with a soldering iron as it is not clear if it can withstand 240 degrees hot air required for lead-free soldering. Use extra flux to create smooth joints. After soldering, remove the flux with isopropyl alcohol.
 
 ## Step 6: Solder the through hole parts
 Next, solder the switches and the speaker with a soldering iron and soldering wire. Cut off the excess leads and smoothen the sharp edges at the back with a small file or sanding paper (be careful to not damage the pcb)
@@ -80,6 +80,7 @@ Always make sure to put the power switch to the OFF position when placing or rem
 Enjoy!
 
 ## Optional: Print a storage case
-STL files are available in the CAD Files folder for printing a storage case from 2 till 7 controllers
+STL files are available in the CAD Files folder for printing a storage case from 2 till 7 controllers. The bottom notch will prevent the contoller to fit nicely when the power button is still on (preventing battery drain)  
+
 ![PCB Components](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/hardware/CAD%20Images/Case%203D%20Print.png?raw=true)
 ![PCB Components](https://github.com/jimd80/pxt-coderdojo-controller/blob/main/images/Case%202.jpg?raw=true)
